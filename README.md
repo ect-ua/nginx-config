@@ -46,15 +46,13 @@ Se o git está todo lixado e nada funcionar, não entres em desespero. Existem f
 
 Ok, queres testar tudo direitinho na tua máquina local antes de mandares o que quer que seja para o repositório. Faz sentido, vamos a isso.
 
-Primeiro começa por instalar o nginx na tua distribuição, seguindo as instruções acima. Depois, sugiro também que edites o teu ficheiro de hosts para que o teu computador tenha um endereço ao qual possas aceder facilmente. Para isso acede com permissões de root ao ficheiro `/etc/hosts/` do teu sistema operativo (no Windows, a localização é diferente) e adiciona a seguinte linha no final do ficheiro:
+Primeiro começa por instalar o nginx na tua distribuição, seguindo as instruções acima. Depois, sugiro também que edites o teu ficheiro de hosts para que o teu computador tenha um endereço ao qual possas aceder facilmente. Para isso acede com permissões de root ao ficheiro `/etc/hosts` do teu sistema operativo (no Windows, a localização é diferente) e adiciona a seguinte linha no final do ficheiro:
 
 ```127.0.0.1 ectuadev```
 
 Isto vai fazer com que o teu computador resolva o TLD .ectuadev localmente, permitindo-te fazer as alterações que precisas no nginx.
 
-Ok, posto isto, edita estes ficheiros para que façam sentido para o teu caso. Assim, faz um fork deste repositório, clona este fork para o teu computador e edita todas as instâncias de `.com` para `.ectuadev`.
-
-Não te esqueças também de ler cada um dos ficheiros individualmente, uma vez que vais precisar de fazer mais alterações.
+Ok, posto isto, edita estes ficheiros para que façam sentido para o teu caso. Não te esqueças também de ler cada um dos ficheiros individualmente, uma vez que vais precisar de fazer mais alterações.
 
 Ah, e não te esqueças de apenas manter na tua pasta de configuração apenas os ficheiros que fazem sentido para o que queres correr. Se não o fizeres, podes ter problemas com o nginx ao dizer que o serviço na porta X, Y ou Z não está em execução. Quando fizeres um Pull Request para este repositório, não incluas ficheiros apagados nem afins. Isso depois pode ser chato para quem fizer a manutenção.
 
